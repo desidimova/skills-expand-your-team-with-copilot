@@ -905,13 +905,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = getActivityShareText(name, details);
     const url = getActivityShareUrl(name);
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
-    window.open(twitterUrl, '_blank', 'width=600,height=400');
+    window.open(twitterUrl, '_blank', 'width=600,height=400,noopener,noreferrer');
   }
 
   function shareOnFacebook(name, details) {
     const url = getActivityShareUrl(name);
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-    window.open(facebookUrl, '_blank', 'width=600,height=400');
+    window.open(facebookUrl, '_blank', 'width=600,height=400,noopener,noreferrer');
   }
 
   function shareViaEmail(name, details) {
