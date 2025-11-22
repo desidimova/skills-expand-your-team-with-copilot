@@ -647,6 +647,7 @@ footer {
 }
 
 /* User controls in header */
+/* Updated to use flexbox for proper alignment of dark mode toggle and login button */
 #user-controls {
   position: absolute;
   top: 10px;

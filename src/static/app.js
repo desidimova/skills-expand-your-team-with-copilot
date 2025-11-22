@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const darkModeIcon = document.getElementById("dark-mode-icon");
 
   // Check for saved dark mode preference or default to light mode
+  // Only enable dark mode if explicitly set to "enabled" in localStorage
+  // This ensures light mode is the default for new users
   const savedDarkMode = localStorage.getItem("darkMode");
   if (savedDarkMode === "enabled") {
     document.body.classList.add("dark-mode");
